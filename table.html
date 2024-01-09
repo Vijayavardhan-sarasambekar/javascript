@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td,th{
+            border:1px black ridge;
+            border-collapse: collapse;
+            border-radius: 5px;
+        }
+        td{
+            /* background-color: aqua; */
+            border-color:red;
+        }
+        th{
+            background-color: yellow;
+            border-color:red;
+        }
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+        /* td:nth-child(even),th:nth-child(even){
+            background-color: aqua;
+        } */
+       
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>English</th>
+            <th>Kannada</th>
+            <th>Spanish</th>
+        </tr>
+        <tr>
+            <td>jan</td>
+            <td>jan</td>
+            <td>jani</td>
+        </tr>
+        <tr>
+            <td>feb</td>
+            <td>feb</td>
+            <td>febri</td>
+        </tr>
+        <tr>
+            <td>march</td>
+            <td>march</td>
+            <td>marchi</td>
+        </tr>
+        <tr>
+            <td>april</td>
+            <td>april</td>
+            <td>aprili</td>
+        </tr>
+        <tr>
+            <td>may</td>
+            <td>may</td>
+            <td>mayi</td>
+        </tr>
+    </table>
+    <script>
+        var arr1=[jan,Feb,mar]
+        var arr2=[NaN,NaN]
+        var arr3=[jano,febro]
+
+        document.write('<table>')
+        document.write('<th>')
+        document.write(arr1)
+        
+    </script>
+</body>
+</html>
