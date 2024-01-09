@@ -1,2 +1,3 @@
 # Javascript_Practice
- Learning javaScript
+ Learning javaScript.
+ Trying to learn Javascript Every day.
