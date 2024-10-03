@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#center{
+    position: absolute;
+    top:50%;
+    right:50%;                            
+    transform: translate(50%,-50%);      /*this is for centering the element also can -> left:50%; transform: translate(-50%,-50%);*/
+    width: 400px;
+    height: 200px;
+    display: flex;
+    /* align-items: center;
+    justify-content:center; */  /*this is for items present in element like <div><p>hi</p></div> here hi will be in center*/
+    border: 1px solid rgb(0, 0, 0);
+}
