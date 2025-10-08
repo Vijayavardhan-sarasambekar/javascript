@@ -1,0 +1,91 @@
+/* Reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+}
+
+/* Flex layout: left card, right JSON, centered vertically */
+body {
+    display: flex;
+    justify-content: flex-start; /* card on left, JSON on right */
+    align-items: center;         /* vertical center */
+    gap: 500px;                   /* space between card and JSON */
+    padding: 50px;
+}
+
+/* Form card styling (left side) */
+.card {
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input styling */
+.input-details {
+    margin-bottom: 20px;
+}
+
+.input-details input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    color: black;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* JSON display (right side) */
+.json-form {
+    width: 400px;
+    background-color: #1e1e1e;  /* dark theme */
+    color: #d4d4d4;
+    font-family: monospace;
+    padding: 20px;
+    border-radius: 8px;
+    white-space: pre; /* preserves JSON indentation */
+    overflow-x: auto;
+    line-height: 1.5;
+    display: none; /* hidden initially, show on submit */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Optional JSON color highlighting (requires JS spans) */
+.json-form .key    { color: #9cdcfe; }   /* keys in blue */
+.json-form .string { color: #bf3600; }   /* strings in orange */
+.json-form .number { color: #b5cea8; }   /* numbers in green */
